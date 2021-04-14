@@ -49,7 +49,7 @@ label1 =tk.Label(win,textvariable=v,fg="red",)
 label1.place(x=150, y=362)
 v.set("顯示於此")
 
-print("第二版本測試-----------")
+print("第三版本測試-----------")
 op2 =tk.Button(win,text="請選擇貓咪為",fg="blue",)
 op2.place(x=10, y=60)
 comboExample = ttk.Combobox(win,
