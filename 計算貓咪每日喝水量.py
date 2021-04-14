@@ -18,6 +18,8 @@ def event1():
         water = weight *70
     elif comStr == "老貓":
         water = weight *80
+    elif comStr == "病貓":
+        water = weight *90
     v.set(str(water))
     print("每日喝水量",water,"CC")
 
@@ -47,13 +49,15 @@ label1 =tk.Label(win,textvariable=v,fg="red",)
 label1.place(x=150, y=362)
 v.set("顯示於此")
 
+print("第二版本測試-----------")
 op2 =tk.Button(win,text="請選擇貓咪為",fg="blue",)
 op2.place(x=10, y=60)
 comboExample = ttk.Combobox(win,
                             values=[
                                     "幼貓",
                                     "成貓",
-                                    "老貓",])
+                                    "老貓",
+                                    "病貓"])
 comboExample.place(x=100,y=62)
 comboExample.current(1)
 win.mainloop()
